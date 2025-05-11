@@ -1,0 +1,231 @@
+.services-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-top: 2px solid #135e13;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+#carouselExampleCaptions{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.services-container h1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #135e13;
+    font-family:'Times New Roman', Times, sans-serif;
+}
+
+
+
+.services-container p{
+    font-size: 1.2rem;
+    color: #118a11;
+}
+
+.carousel-inner {
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #135e13;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item h5{
+    font-size: 1.5rem;
+    color:whitesmoke;
+}
+
+.carousel-item p{
+    font-size: 1rem;
+    color: wheat;
+}
+
+.carousel-item:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-caption{
+    text-align: center;
+}
+
+/* For first slide caption positioning */
+.carousel-item.first .carousel-caption {
+    top: 20px;
+    bottom: auto;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 350px;
+    right: auto;
+    text-align: center;
+    background: rgba(37, 124, 37, 0.387);
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.carousel-item.second .carousel-caption {
+    transform: translateX(-50%);
+    left: 50%;
+    right: auto;
+    min-height: 150px;
+    width: 300px;
+    text-align: center;
+    background: rgba(26, 130, 143, 0.664);
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    }
+    
+    .popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    }
+    
+    .popup-content {
+    position: relative;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .popup-overlay.active .popup-content {
+    transform: scale(1);
+    }
+    
+    .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    }
+    
+    .close-btn:hover {
+    background: #c0392b;
+    transform: rotate(90deg);
+    }
+    
+    .popup-content h2 {
+    color: #135e13;
+    margin-bottom: 25px;
+    font-size: 28px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    }
+    
+    .popup-content p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 16px;
+    }
+    
+    .popup-content ul {
+    padding-left: 20px;
+    margin: 15px 0;
+    }
+    
+    .popup-content li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    }
+    
+    .popup-content li:before {
+    content: "•";
+    color: #135e13;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    }
+    
+    .highlight {
+    color: #135e13;
+    font-weight: 600;
+    }
+    
+    .emoji-heading {
+    font-size: 24px;
+    margin: 20px 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    
+    .emoji-heading span {
+    font-size: 28px;
+    }
+
+.read-btn {
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #135e13;
+    border: 2px solid #135e13;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.read-btn:hover {
+    background-color: #135e13;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

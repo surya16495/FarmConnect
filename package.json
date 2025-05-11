@@ -1,0 +1,44 @@
+{
+  "name": "contract_farming",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.7",
+    "@mui/material-nextjs": "^6.4.3",
+    "@mui/x-charts": "^7.27.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "firebase": "^11.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.476.0",
+    "mongoose": "^8.12.1",
+    "next": "15.1.7",
+    "nodemailer": "^6.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^7.2.0",
+    "twilio": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "css-loader": "^7.1.2",
+    "nodemon": "^3.1.9",
+    "style-loader": "^4.0.0"
+  }
+}

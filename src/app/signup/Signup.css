@@ -1,0 +1,380 @@
+*{
+  margin: 0;
+}
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+main div form label{
+  display: flex;
+  justify-content: start;
+  text-decoration: underline;
+}
+
+.container{
+  width:100vw;
+}
+
+.signup-section {
+  width: fit-content;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main div h2 {
+  color: darkgreen;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+main div form input {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+main form div{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px;
+}
+@media (min-width: 600px) {
+  .signup-section {
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+.farmer-bg {
+  background-color: #eaf9e1;
+  width: 100vw;
+}
+
+.dealer-bg {
+  background-color: #f6deb1;
+}
+
+.storage-bg {
+  background-color: #f6b1a1;
+}
+
+.signup-box {
+  background: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+}
+
+.role-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.role-selector label {
+  font-weight: bold;
+}
+
+
+button {
+  background: rgb(230, 155, 7);
+  color: white;
+  padding: 10px;
+  border: none;
+  width: fit-content;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  text-align: end;
+}
+
+/* Animation styles */
+@keyframes slideLogo {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.logo-slide {
+  animation: slideLogo 1s forwards;
+}
+
+.return{
+  text-align: right;
+}
+
+.link{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 100px;
+  padding: 8px;
+  color: rgb(236, 138, 11);
+  text-decoration: none;
+}
+
+
+
+.link:hover{
+  background-color: rgb(236, 138, 11);
+  color: white;
+}
+.Role{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.Role input{
+  margin: 0;
+}
+
+button:hover {
+  background-color: transparent;
+  border-style: solid;
+  border-color:rgb(236, 138, 11);
+  color: rgb(236, 138, 11);
+  font-weight: bold;
+}
+
+/* Login/Signup Toggle Button */
+.toggle-auth {
+  background: none;
+  border: none;
+  color: rgb(236, 138, 11);
+  cursor: pointer;
+  margin: 15px 0;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.toggle-auth:hover {
+  color: darkgreen;
+  background-color: transparent;
+}
+
+/* Login Form Specific Styles */
+.login-form {
+  margin-top: 20px;
+}
+
+.login-form input[type="password"] {
+  letter-spacing: 2px;
+}
+
+/* Password Field Styling */
+input[type="password"] {
+  padding-right: 35px; /* Space for potential eye icon */
+}
+
+/* Message Styling */
+.message {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Login Button Specific Style */
+.login-form button {
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Additional Responsive Adjustments */
+@media (max-width: 480px) {
+  .signup-box {
+    width: 90%;
+    padding: 15px;
+    background-size: 300px 225px;
+  }
+  
+  .role-selector {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Password field spacing */
+input[type="password"] {
+  margin-top: 15px;
+}
+
+/* Error message styling */
+.error-message {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Success Card Styles */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(15px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+.loader-container {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #eaffea 0%, #d6ffd6 100%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+.rotating-spinner {
+  animation: rotate 1.5s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(45, 106, 79, 0.3));
+}
+
+.loader-text {
+  color: #2d6a4f;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Particle Animation */
+.particle-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.particle-animation::before,
+.particle-animation::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #2d6a4f;
+  border-radius: 50%;
+  animation: particle 1.5s infinite;
+}
+
+.particle-animation::before {
+  top: -20px;
+  left: -20px;
+  animation-delay: 0.2s;
+}
+
+.particle-animation::after {
+  bottom: -20px;
+  right: -20px;
+  animation-delay: 0.5s;
+}
+
+@keyframes particle {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+/* Success Animation */
+.success-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  animation: successPop 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.success-gif {
+  filter: drop-shadow(0 0 20px rgba(45, 106, 79, 0.3));
+}
+
+@keyframes successPop {
+  0% { transform: translate(-50%, -50%) scale(0); }
+  60% { transform: translate(-50%, -50%) scale(1.1); }
+  85% { transform: translate(-50%, -50%) scale(0.95); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+/* Add bloom effect */
+@keyframes bloom {
+  0% { filter: brightness(1) saturate(1); }
+  50% { filter: brightness(1.2) saturate(1.5); }
+  100% { filter: brightness(1) saturate(1); }
+}
+
+.success-gif {
+  animation: successEntrance 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.success-text {
+  color: #2d6a4f;
+  font-size: 2rem;
+  margin-top: 20px;
+  font-weight: 700;
+  animation: textFloat 2s ease-in-out infinite;
+}
+
+@keyframes successEntrance {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  80% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+@keyframes textFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Loading spinner animation */
+.rotating-spinner {
+  animation: rotate 2s linear infinite;
+}

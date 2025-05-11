@@ -1,0 +1,58 @@
+/* globals.css */
+:root {
+    --background: 255, 255, 255;
+    --foreground: 34, 34, 34;
+    --primary: 34, 34, 34;
+    --primary-foreground: 255, 255, 255;
+    --secondary: 240, 240, 240;
+    --secondary-foreground: 34, 34, 34;
+    --muted: 240, 240, 240;
+    --muted-foreground: 136, 136, 136;
+    --accent: 240, 240, 240;
+    --accent-foreground: 34, 34, 34;
+    --destructive: 255, 59, 48;
+    --destructive-foreground: 255, 255, 255;
+    --border: 224, 224, 224;
+    --input: 224, 224, 224;
+    --ring: 34, 34, 34;
+    --radius: 0.5rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--border);
+  }
+  
+  body {
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+    font-family: 'Inter', sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  #__next {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

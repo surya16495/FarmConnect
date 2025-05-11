@@ -1,0 +1,103 @@
+/* StorageDetails.css */
+.storage-details-container {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .storage-form-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: start;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .radio-group input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2d6a4f;
+  }
+  
+  .storage-price-input {
+    position: relative;
+  }
+  
+  .storage-price-input::before {
+    content: "₹";
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2d6a4f;
+    font-weight: 600;
+  }
+  
+  .storage-price-input input {
+    padding-left: 2.5rem !important;
+  }
+  
+  /* Inherit shared styles from profile.css */
+  .storage-details-container .form-group{
+    
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border: 1px solid #e9ecef;
+  }
+  .storage-details-container .form-label{
+      font-weight: 600;
+      color: #2d3748;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    
+  }
+  .storage-details-container .profile-input{
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: white;
+
+  }
+  .storage-details-container .button-group {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    border-top: 2px solid #f1f3f5;
+    margin-top: 1rem;
+  }
+
+  .storage-details-container .button-group button {
+    padding: 0.875rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
